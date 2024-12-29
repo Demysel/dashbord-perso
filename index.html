@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Personnel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="dashboard">
+    <header>
+      <h1>Mon Dashboard</h1>
+      <div id="date-time">
+        <span id="current-time"></span>
+        <span id="current-date"></span>
+      </div>
+      <button id="darkModeToggle">Activer le Mode Sombre</button>
+    </header>
+
+    <main>
+      <section id="weather">
+        <h2>Météo Actuelle</h2>
+        <div id="weather-info">
+          <p id="weather-location"></p>
+          <p id="weather-description"></p>
+          <p id="weather-temp"></p>
+        </div>
+      </section>
+
+      <section id="agenda">
+        <h2>Agenda</h2>
+        <div id="task-list"></div>
+        <input type="text" id="task-input" placeholder="Ajouter une tâche...">
+        <button id="add-task">Ajouter</button>
+      </section>
+
+      <section id="favorites">
+        <h2>Liens Favoris</h2>
+        <ul id="links">
+          <li><a href="https://www.google.com" target="_blank">Google</a></li>
+          <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+          <li><a href="https://www.github.com" target="_blank">GitHub</a></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
